@@ -1,0 +1,1 @@
+--declaration src/timonxue/ImportTS.d.ts -out bin\txl.d.ts

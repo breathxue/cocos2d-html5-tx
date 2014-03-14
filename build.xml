@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project name="Javascript compress project" basedir="." default="compile">
+
+    <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
+             classpath="E:\web\html5\cocos2d-html5\trunk\tools\compiler\compiler.jar"/>
+
+    <target name="compile">
+        <jscomp compilationLevel="simple" warning="quiet"
+                debug="true" output="bin\txl.min.js"
+                sourceMapOutputFile="bin\sourcemap"
+                sourceMapFormat="V3">
+            <sources dir="${basedir}">
+                <file name="src/timonxue/debug/Trace.js"/>
+                <file name="src/timonxue/displayObject/Bitmap.js"/>
+                <file name="src/timonxue/displayObject/BitmapData.js"/>
+                <file name="src/timonxue/displayObject/IInteractiveObject.js"/>
+                <file name="src/timonxue/displayObject/InteractiveObject.js"/>
+                <file name="src/timonxue/displayObject/DragObject.js"/>
+                <file name="src/timonxue/events/Event.js"/>
+                <file name="src/timonxue/events/EventDispatcher.js"/>
+                <file name="src/timonxue/events/MouseTouchEvent.js"/>
+                <file name="src/timonxue/math/Matrix.js"/>
+                <file name="src/timonxue/utils/Attach.js"/>
+                <file name="src/timonxue/utils/Utils.js"/>
+            </sources>
+        </jscomp>
+    </target>
+</project>

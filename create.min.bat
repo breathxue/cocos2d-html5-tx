@@ -1,0 +1,1 @@
+tsc @create.min.txt
